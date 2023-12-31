@@ -1,16 +1,21 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./chatlist.module.css";
-import { Search } from "lucide-react";
+import { Plus, Search } from "lucide-react";
 import Item from "./ListItem";
 
 const ChatList = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <div className={styles.container}>
-      <div className={styles.input_container}>
-        <Search strokeWidth={1.5} width={18} />
-        <input className={styles.input} placeholder="Search" />
+      <div className={styles.topbar}>
+        <div className={styles.input_container}>
+          <Search strokeWidth={1.5} width={18} />
+          <input className={styles.input} placeholder="Search" />
+        </div>
+        <div className={styles.icon}>
+          <Plus strokeWidth={1.5} width={18} />
+        </div>
       </div>
       <div className={styles.userlist_container}>
         {defaultUsers.map(({ image, name, latestMessage }, index) => {

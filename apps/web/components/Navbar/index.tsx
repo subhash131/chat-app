@@ -3,7 +3,7 @@ import styles from "./navbar.module.css";
 import { Briefcase, CalendarDays, MessagesSquare } from "lucide-react";
 
 const navItems = [
-  { name: "Work", icon: <Briefcase strokeWidth={1.5} /> },
+  { name: "Projects", icon: <Briefcase strokeWidth={1.5} /> },
   { name: "Chat", icon: <MessagesSquare strokeWidth={1.5} /> },
   { name: "Calendar", icon: <CalendarDays strokeWidth={1.5} /> },
 ];

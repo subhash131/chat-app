@@ -12,6 +12,7 @@
   --layout-background: #131313;
   --highlight-layout-background: #202329;
   --highlight-main-background: #2f333d;
+  --violet: #6b8afd;
   --white: #ffffff;
   --gray: #878c97;
   --callout-rgb: 20, 20, 20;
@@ -43,4 +44,16 @@ body {
 
 body {
   color: var(--white);
+}
+input,
+textarea {
+  padding-block: 0.8rem;
+  background-color: transparent;
+  border: none;
+  font-size: small;
+  outline: none;
+  color: var(--white);
+}
+textarea {
+  resize: none;
 }

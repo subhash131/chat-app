@@ -7,7 +7,7 @@ const Topbar = () => {
   return (
     <div className={styles.topbar}>
       <div>
-        <p>Office Chat</p>
+        <p>Subhash</p>
         <p className={styles.smallfont}>45 members, 24 online</p>
       </div>
       <div className={styles.icons_container}>
