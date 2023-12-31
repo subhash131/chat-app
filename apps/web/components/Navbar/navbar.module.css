@@ -33,5 +33,5 @@
 }
 
 .item:hover {
-  background-color: var(--gray-background);
+  background-color: var(--highlight-layout-background);
 }

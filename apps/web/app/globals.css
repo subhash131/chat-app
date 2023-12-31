@@ -10,7 +10,10 @@
 
   --foreground-rgb: 255, 255, 255;
   --layout-background: #131313;
-  --gray-background: #202329;
+  --highlight-layout-background: #202329;
+  --highlight-main-background: #2f333d;
+  --white: #ffffff;
+  --gray: #878c97;
   --callout-rgb: 20, 20, 20;
   --callout-border-rgb: 108, 108, 108;
   --card-rgb: 100, 100, 100;
@@ -28,6 +31,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  user-select: none;
 }
 
 html,
@@ -38,5 +42,5 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--white);
 }
