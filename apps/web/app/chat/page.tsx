@@ -8,7 +8,6 @@ const page = () => {
     <div className={styles.container}>
       <ChatList />
       <Conversation />
-      
     </div>
   );
 };

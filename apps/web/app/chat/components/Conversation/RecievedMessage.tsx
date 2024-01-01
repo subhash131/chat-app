@@ -11,6 +11,7 @@ const RecievedMessage = () => {
         width={20}
         height={20}
         className={styles.image}
+        draggable={false}
       />
       <div className={styles.received_message}>
         <p>

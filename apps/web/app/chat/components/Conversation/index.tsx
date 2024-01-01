@@ -14,8 +14,12 @@ const Conversation = () => {
         <SentMessage />
         <RecievedMessage />
         <SentMessage />
+        <SentMessage />
+        <SentMessage />
         <RecievedMessage />
         <SentMessage />
+        <RecievedMessage />
+        <RecievedMessage />
       </div>
       <Send />
     </div>

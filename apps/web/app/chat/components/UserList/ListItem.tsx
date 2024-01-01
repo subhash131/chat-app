@@ -27,6 +27,7 @@ const Item = ({
         width={20}
         height={20}
         className={styles.image}
+        draggable={false}
       />
       <div className={styles.item_content}>
         <p className={styles.username}>{name}</p>

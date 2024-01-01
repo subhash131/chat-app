@@ -8,7 +8,7 @@ const Topbar = () => {
     <div className={styles.topbar}>
       <div>
         <p>Subhash</p>
-        <p className={styles.smallfont}>45 members, 24 online</p>
+        <p className={styles.smallfont}>Online</p>
       </div>
       <div className={styles.icons_container}>
         <Search

@@ -1,6 +1,7 @@
 .container {
   flex: 1;
   padding-block: 2rem;
+  user-select: none;
 }
 
 .input_container {

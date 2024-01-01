@@ -6,7 +6,7 @@ const Send = () => {
   return (
     <div className={styles.send}>
       <Paperclip />
-      <textarea placeholder="Type.." className={styles.input} />
+      <textarea placeholder="Your Message" className={styles.input} />
       <SendHorizontal />
     </div>
   );
