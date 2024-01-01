@@ -1,4 +1,7 @@
 .container {
+  display: flex;
+}
+.chat_container {
   background-color: var(--highlight-layout-background);
   width: 78%;
   min-height: 100%;
@@ -6,4 +9,10 @@
   display: flex;
   gap: 1rem;
   overflow: hidden;
+}
+
+.chatdetails_container {
+  padding-block: 2rem;
+  /* background-color: rebeccapurple; */
+  width: calc(100% - 78%);
 }

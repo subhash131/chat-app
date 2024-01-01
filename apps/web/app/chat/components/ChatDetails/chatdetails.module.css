@@ -1,2 +1,81 @@
 .container {
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title_bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.2rem;
+}
+
+.options_container {
+  display: flex;
+  gap: 0.5rem;
+  padding-block: 1rem;
+}
+
+.icon_container {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background-color: var(--highlight-main-background);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.link {
+  color: var(--gray);
+  font-size: x-small;
+}
+.images_container {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  cursor: pointer;
+  padding-block: 0.5rem;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.images_container::-webkit-scrollbar,
+.files_list::-webkit-scrollbar {
+  display: none;
+}
+
+.image {
+  border-radius: 0.8rem;
+}
+.files_list {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  height: 9rem;
+  /* background-color: aquamarine; */
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.file_container {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  cursor: pointer;
+  transition: 150ms;
+  border-radius: 0.8rem;
+}
+.file_container:hover {
+  background-color: var(--highlight-main-background);
+}
+
+.file_icon_container {
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  background-color: var(--highlight-main-background);
+  display: grid;
+  place-content: center;
+}
+.file_name {
+  font-size: x-small;
 }
