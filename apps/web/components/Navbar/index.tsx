@@ -1,11 +1,20 @@
 import React from "react";
 import styles from "./navbar.module.css";
 import { Briefcase, CalendarDays, MessagesSquare } from "lucide-react";
+import Link from "next/link";
 
 const navItems = [
-  { name: "Projects", icon: <Briefcase strokeWidth={1.5} /> },
-  { name: "Chat", icon: <MessagesSquare strokeWidth={1.5} /> },
-  { name: "Calendar", icon: <CalendarDays strokeWidth={1.5} /> },
+  {
+    name: "Projects",
+    icon: <Briefcase strokeWidth={1.5} />,
+    link: "/projects",
+  },
+  { name: "Chat", icon: <MessagesSquare strokeWidth={1.5} />, link: "/chat" },
+  {
+    name: "Calendar",
+    icon: <CalendarDays strokeWidth={1.5} />,
+    link: "/calender",
+  },
 ];
 
 const Navbar = () => {
@@ -13,8 +22,12 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.logo}>CH</div>
       <div className={styles.nav_items}>
-        {navItems.map(({ name, icon }, index) => {
-          return <Item name={name} icon={icon} key={`${index}:${name}`} />;
+        {navItems.map(({ name, icon, link }, index) => {
+          return (
+            <Link href={link} key={`${index}:${name}`}>
+              <Item name={name} icon={icon} />
+            </Link>
+          );
         })}
       </div>
     </div>
