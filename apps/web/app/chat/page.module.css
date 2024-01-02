@@ -13,6 +13,5 @@
 
 .chatdetails_container {
   padding-block: 2rem;
-  /* background-color: rebeccapurple; */
   width: calc(100% - 78%);
 }

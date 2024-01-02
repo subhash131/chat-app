@@ -26,7 +26,7 @@ const Options = () => {
     <div className={styles.options_container}>
       {options.map(({ name, icon }, index) => {
         return (
-          <div className={styles.icon_container} key={`${name}:${index}`}>
+          <div className={styles.options_icon} key={`${name}:${index}`}>
             {icon}
           </div>
         );

@@ -21,16 +21,16 @@
   justify-content: center;
 }
 
-.icon_container {
+.icon_container,
+.options_icon {
   padding: 1rem;
   border-radius: 0.8rem;
   background-color: var(--highlight-main-background);
   display: grid;
   place-content: center;
   cursor: pointer;
-  width: 5rem;
-  height: 4rem;
 }
+
 .link {
   color: var(--gray);
   font-size: x-small;
