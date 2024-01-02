@@ -57,8 +57,7 @@
   display: flex;
   gap: 0.5rem;
   flex-direction: column;
-  height: 11rem;
-  /* background-color: aquamarine; */
+  height: 9rem;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
 }
