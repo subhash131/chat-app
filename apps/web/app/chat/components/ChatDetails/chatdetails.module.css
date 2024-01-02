@@ -28,6 +28,8 @@
   display: grid;
   place-content: center;
   cursor: pointer;
+  width: 5rem;
+  height: 4rem;
 }
 .link {
   color: var(--gray);
