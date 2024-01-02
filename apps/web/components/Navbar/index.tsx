@@ -1,9 +1,19 @@
 import React from "react";
 import styles from "./navbar.module.css";
-import { Briefcase, CalendarDays, MessagesSquare } from "lucide-react";
+import {
+  Briefcase,
+  CalendarDays,
+  LayoutDashboard,
+  MessagesSquare,
+} from "lucide-react";
 import Link from "next/link";
 
 const navItems = [
+  {
+    name: "Dashboard",
+    icon: <LayoutDashboard strokeWidth={1.5} />,
+    link: "/dashboard",
+  },
   {
     name: "Projects",
     icon: <Briefcase strokeWidth={1.5} />,
