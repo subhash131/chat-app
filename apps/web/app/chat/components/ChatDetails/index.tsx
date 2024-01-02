@@ -6,44 +6,62 @@ import Options from "./Options";
 import { X } from "lucide-react";
 import FilesList from "./FilesList";
 import SharedLinks from "./SharedLinks";
+import Titlebar from "./Titlebar";
+
+const data = [
+  {
+    titlebar: {
+      name: "Chat Details",
+      component: <X strokeWidth={1.5} width={20} />,
+    },
+    details: <Options />,
+  },
+  {
+    titlebar: {
+      name: "Photos and Videos",
+      component: (
+        <Link href="#" className={styles.link}>
+          See all
+        </Link>
+      ),
+    },
+    details: <ImageList />,
+  },
+  {
+    titlebar: {
+      name: "Shared Files",
+      component: (
+        <Link href="#" className={styles.link}>
+          See all
+        </Link>
+      ),
+    },
+    details: <FilesList />,
+  },
+  {
+    titlebar: {
+      name: "Shared Links",
+      component: (
+        <Link href="#" className={styles.link}>
+          See all
+        </Link>
+      ),
+    },
+    details: <SharedLinks />,
+  },
+];
 
 const ChatDetails = () => {
   return (
     <div className={styles.container}>
-      <div>
-        <div className={styles.title_bar}>
-          <p>Chat Details</p>
-          <X strokeWidth={1.5} width={20} />
-        </div>
-        <Options />
-      </div>
-      <div>
-        <div className={styles.title_bar}>
-          <p>Photos and Videos</p>
-          <Link href="#" className={styles.link}>
-            See all
-          </Link>
-        </div>
-        <ImageList />
-      </div>
-      <div>
-        <div className={styles.title_bar}>
-          <p>Shared Files</p>
-          <Link href="#" className={styles.link}>
-            See all
-          </Link>
-        </div>
-        <FilesList />
-      </div>
-      <div>
-        <div className={styles.title_bar}>
-          <p>Shared Links</p>
-          <Link href="#" className={styles.link}>
-            See all
-          </Link>
-        </div>
-        <SharedLinks />
-      </div>
+      {data.map(({ titlebar, details }, index) => {
+        return (
+          <div key={`${index}:${titlebar.name}`}>
+            <Titlebar name={titlebar.name} component={titlebar.component} />
+            {details}
+          </div>
+        );
+      })}
     </div>
   );
 };
