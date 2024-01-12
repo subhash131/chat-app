@@ -65,3 +65,17 @@ a {
   text-decoration: none;
   color: var(--white);
 }
+
+*::selection {
+  background: #ffffff;
+  color: black;
+}
+*::-moz-selection {
+  background: #ffffff;
+  color: black;
+}
+
+*::-webkit-selection {
+  background: #ffffff;
+  color: black;
+}

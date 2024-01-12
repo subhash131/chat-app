@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useId, useState } from "react";
 import styles from "./chatlist.module.css";
 import { Plus, Search } from "lucide-react";
 import Item from "./ListItem";
 
 const ChatList = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const key = useId();
   return (
     <div className={styles.container}>
       <div className={styles.topbar}>
@@ -25,7 +26,7 @@ const ChatList = () => {
               image={image}
               name={name}
               latestMessage={latestMessage}
-              key={`${index}:${name}`}
+              key={`${key}-${name}`}
               onClick={() => {
                 setSelectedIndex(index);
               }}

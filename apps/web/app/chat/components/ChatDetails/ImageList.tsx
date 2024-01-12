@@ -11,6 +11,7 @@ const ImageList = () => {
         width={150}
         height={100}
         className={styles.image}
+        draggable={false}
       />
       <Image
         src="/assets/cat-profile-2.jpg"
@@ -18,6 +19,7 @@ const ImageList = () => {
         width={150}
         height={100}
         className={styles.image}
+        draggable={false}
       />
       <Image
         src="/assets/cat-profile-3.jpg"
@@ -25,6 +27,7 @@ const ImageList = () => {
         width={150}
         height={100}
         className={styles.image}
+        draggable={false}
       />
     </div>
   );

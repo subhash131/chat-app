@@ -60,6 +60,7 @@
   overflow: hidden;
   cursor: pointer;
 }
+.item:hover,
 .selectedItem {
   background-color: var(--highlight-main-background);
 }

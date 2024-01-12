@@ -5,40 +5,39 @@ import { File } from "lucide-react";
 const FilesList = () => {
   return (
     <div className={styles.list}>
-      <div className={styles.item_container}>
-        <div className={styles.icon_container}>
-          <File strokeWidth={1.5} />
-        </div>
-        <p className={styles.item_name}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi
-        </p>
-      </div>
-      <div className={styles.item_container}>
-        <div className={styles.icon_container}>
-          <File strokeWidth={1.5} />
-        </div>
-        <p className={styles.item_name}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi
-        </p>
-      </div>
-      <div className={styles.item_container}>
-        <div className={styles.icon_container}>
-          <File strokeWidth={1.5} />
-        </div>
-        <p className={styles.item_name}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi
-        </p>
-      </div>{" "}
-      <div className={styles.item_container}>
-        <div className={styles.icon_container}>
-          <File strokeWidth={1.5} />
-        </div>
-        <p className={styles.item_name}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi
-        </p>
-      </div>
+      {data.map(({ icon, name }, index) => {
+        return (
+          <div className={styles.item_container} key={`${name}-${index}`}>
+            <div className={styles.icon_container}>{icon}</div>
+            <p className={styles.item_name}>{name}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };
 
 export default FilesList;
+
+const data = [
+  {
+    icon: <File strokeWidth={1.5} />,
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi",
+  },
+  {
+    icon: <File strokeWidth={1.5} />,
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi",
+  },
+  {
+    icon: <File strokeWidth={1.5} />,
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi",
+  },
+  {
+    icon: <File strokeWidth={1.5} />,
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi",
+  },
+  {
+    icon: <File strokeWidth={1.5} />,
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi",
+  },
+];
