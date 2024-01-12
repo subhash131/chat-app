@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { AuthProvider } from "../providers/authProvider";
 import styles from "./layout.module.css";
 import Navbar from "../components/Navbar";
+import SocketProvider from "../context/socketContext/SocketContext";
 
 export const metadata: Metadata = {
   title: "Find Your Sponsor",
@@ -17,12 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AuthProvider>
-        <body className={styles.layout}>
-          <div className={styles.navbar_container}>
-            <Navbar />
-          </div>
-          <div className={styles.main_container}>{children}</div>
-        </body>
+        <SocketProvider>
+          <body className={styles.layout}>
+            <div className={styles.navbar_container}>
+              <Navbar />
+            </div>
+            <div className={styles.main_container}>{children}</div>
+          </body>
+        </SocketProvider>
       </AuthProvider>
     </html>
   );
