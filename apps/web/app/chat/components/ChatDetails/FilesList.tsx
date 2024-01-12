@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useId } from "react";
 import styles from "./chatdetails.module.css";
 import { File } from "lucide-react";
 
 const FilesList = () => {
+  const id = useId();
   return (
     <div className={styles.list}>
       {data.map(({ icon, name }, index) => {
         return (
-          <div className={styles.item_container} key={`${name}-${index}`}>
+          <div className={styles.item_container} key={`${id}-${index}`}>
             <div className={styles.icon_container}>{icon}</div>
             <p className={styles.item_name}>{name}</p>
           </div>
