@@ -72,8 +72,7 @@
 .received_msg_warpper {
   display: flex;
   gap: 1rem;
-  /* background-color: red; */
-  align-items: end;
+  align-items: flex-end;
 }
 .image {
   object-fit: cover;
