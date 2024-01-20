@@ -43,9 +43,9 @@ const navItems = [
     link: "/dashboard",
   },
   {
-    name: "Projects",
+    name: "Sponsors",
     icon: <Briefcase strokeWidth={1.5} />,
-    link: "/projects",
+    link: "/sponsors",
   },
   { name: "Chat", icon: <MessagesSquare strokeWidth={1.5} />, link: "/chat" },
   {
