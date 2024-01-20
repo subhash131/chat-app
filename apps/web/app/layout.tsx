@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { AuthProvider } from "../providers/authProvider";
 import styles from "./layout.module.css";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/common/Navbar";
 import SocketProvider from "../context/socketContext/SocketContext";
 
 export const metadata: Metadata = {
