@@ -5,9 +5,13 @@ import { Paperclip, SendHorizontal } from "lucide-react";
 const Send = () => {
   return (
     <div className={styles.send}>
-      <Paperclip />
       <textarea placeholder="Your Message" className={styles.input} />
-      <SendHorizontal />
+      <div className={styles.icon_container}>
+        <Paperclip strokeWidth={1.5} size={18} />
+      </div>
+      <div className={styles.icon_container}>
+        <SendHorizontal strokeWidth={1.5} size={18} />
+      </div>
     </div>
   );
 };
