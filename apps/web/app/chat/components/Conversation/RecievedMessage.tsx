@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./conversation.module.css";
 import Image from "next/image";
 
-const RecievedMessage = () => {
+const RecievedMessage = ({ message }: { message: string }) => {
   return (
     <div className={styles.received_msg_warpper}>
       <Image
@@ -14,13 +14,7 @@ const RecievedMessage = () => {
         draggable={false}
       />
       <div className={styles.received_message}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat ut
-          quia eligendi dignissimos distinctio et deleniti modi possimus rerum
-          ex omnis assumenda recusandae nobis voluptate ullam totam corporis,
-          aperiam sunt minus mollitia? Nam voluptates culpa minus itaque quae
-          deleniti labore!
-        </p>
+        <p>{message}</p>
       </div>
     </div>
   );
