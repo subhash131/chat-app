@@ -3,16 +3,32 @@ import styles from "./chatdetails.module.css";
 import Link from "next/link";
 import ImageList from "./ImageList";
 import Options from "./Options";
-import { X } from "lucide-react";
 import FilesList from "./FilesList";
 import SharedLinks from "./SharedLinks";
 import Titlebar from "./Titlebar";
+
+const ChatDetails = () => {
+  return (
+    <div className={styles.container}>
+      {data.map(({ titlebar, details }, index) => {
+        return (
+          <div key={`${index}:${titlebar.name}`}>
+            <Titlebar name={titlebar.name} component={titlebar.component} />
+            {details}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default ChatDetails;
 
 const data = [
   {
     titlebar: {
       name: "Chat Details",
-      component: <X strokeWidth={1.5} width={20} />,
+      component: "",
     },
     details: <Options />,
   },
@@ -50,20 +66,3 @@ const data = [
     details: <SharedLinks />,
   },
 ];
-
-const ChatDetails = () => {
-  return (
-    <div className={styles.container}>
-      {data.map(({ titlebar, details }, index) => {
-        return (
-          <div key={`${index}:${titlebar.name}`}>
-            <Titlebar name={titlebar.name} component={titlebar.component} />
-            {details}
-          </div>
-        );
-      })}
-    </div>
-  );
-};
-
-export default ChatDetails;
