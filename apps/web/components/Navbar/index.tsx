@@ -2,30 +2,11 @@ import React from "react";
 import styles from "./navbar.module.css";
 import {
   Briefcase,
-  CalendarDays,
+  CircleUserRound,
   LayoutDashboard,
   MessagesSquare,
 } from "lucide-react";
 import Link from "next/link";
-
-const navItems = [
-  {
-    name: "Dashboard",
-    icon: <LayoutDashboard strokeWidth={1.5} />,
-    link: "/dashboard",
-  },
-  {
-    name: "Projects",
-    icon: <Briefcase strokeWidth={1.5} />,
-    link: "/projects",
-  },
-  { name: "Chat", icon: <MessagesSquare strokeWidth={1.5} />, link: "/chat" },
-  {
-    name: "Calendar",
-    icon: <CalendarDays strokeWidth={1.5} />,
-    link: "/calender",
-  },
-];
 
 const Navbar = () => {
   return (
@@ -54,3 +35,22 @@ const Item = ({ name, icon }: { name: string; icon: React.ReactNode }) => {
     </div>
   );
 };
+
+const navItems = [
+  {
+    name: "Dashboard",
+    icon: <LayoutDashboard strokeWidth={1.5} />,
+    link: "/dashboard",
+  },
+  {
+    name: "Projects",
+    icon: <Briefcase strokeWidth={1.5} />,
+    link: "/projects",
+  },
+  { name: "Chat", icon: <MessagesSquare strokeWidth={1.5} />, link: "/chat" },
+  {
+    name: "Profile",
+    icon: <CircleUserRound strokeWidth={1.5} />,
+    link: "/profile",
+  },
+];
