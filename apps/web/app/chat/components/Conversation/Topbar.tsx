@@ -11,19 +11,12 @@ const Topbar = () => {
         <p className={styles.smallfont}>Online</p>
       </div>
       <div className={styles.icons_container}>
-        <Search
-          strokeWidth={1.5}
-          className={styles.icon}
-          width={20}
-          height={20}
-        />
-        <Phone
-          strokeWidth={1.5}
-          fill="white"
-          className={styles.icon}
-          width={20}
-          height={20}
-        />
+        <div className={styles.icon_container}>
+          <Search strokeWidth={1.5} size={18} />
+        </div>
+        <div className={styles.icon_container}>
+          <Phone strokeWidth={1.5} size={18} />
+        </div>
       </div>
     </div>
   );
