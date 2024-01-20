@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./page.module.css";
-import ChatList from "./components/UserList";
-import Conversation from "./components/Conversation";
-import ChatDetails from "./components/ChatDetails";
+import ChatList from "../../components/chat/UserList";
+import Conversation from "../../components/chat/Conversation";
+import ChatDetails from "../../components/chat/ChatDetails";
 
 const page = () => {
   return (
