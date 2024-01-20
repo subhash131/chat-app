@@ -30,7 +30,6 @@
   place-content: center;
   border-radius: 2rem;
   height: 2rem;
-  width: 2rem;
   cursor: pointer;
 }
 .userlist_container {
@@ -38,7 +37,8 @@
   height: 100%;
   padding-block: 2rem;
   padding-inline: 1rem;
-  gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -60,9 +60,19 @@
   overflow: hidden;
   cursor: pointer;
 }
-.item:hover,
-.selectedItem {
+.item:hover {
   background-color: var(--highlight-main-background);
+}
+
+.selectedItem {
+  background-color: var(--violet);
+}
+.selectedItem:hover {
+  background-color: var(--violet);
+}
+
+.selectedItem .message {
+  color: white;
 }
 
 .image {
