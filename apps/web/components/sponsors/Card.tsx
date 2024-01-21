@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import styles from "./sponsors.module.css";
+import styles from "./sponsor.module.css";
 
 export function Card() {
   return (
@@ -21,14 +21,12 @@ export function Card() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           debitis?
         </p>
-        <div className="mt-4">
+        <div className={styles.tags_container}>
           <span className={styles.tags}>#Macbook</span>
           <span className={styles.tags}>#Apple</span>
           <span className={styles.tags}>#Laptop</span>
         </div>
-        <button type="button" className={styles.button}>
-          Read
-        </button>
+        <div className={styles.button}>view</div>
       </div>
     </div>
   );
