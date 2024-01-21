@@ -48,6 +48,7 @@
   padding-inline: 0.5rem;
   padding-block: 0.2rem;
   user-select: none;
+  text-transform: lowercase ;
 }
 
 .button {
@@ -75,6 +76,9 @@
   font-size: medium;
   cursor: pointer;
   overflow: hidden;
+}
+.recent_sponsor_card:hover {
+  background: var(--violet);
 }
 .recent_sponsor_details {
   width: 70%;
