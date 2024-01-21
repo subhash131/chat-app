@@ -3,12 +3,15 @@ import { Card } from "../../components/sponsors/Card";
 import styles from "./sponsors.module.css";
 import RecentSponsors from "../../components/sponsors/RecentSponsorsCard";
 import Titlebar from "../../components/common/Titlebar";
+import SearchComp from "../../components/common/Search";
 
 const page = () => {
   return (
     <div className={styles.container}>
       <div className={styles.sponsors_container}>
-        <div className={styles.sponsors_search}>Search</div>
+        <div className={styles.sponsors_search}>
+          <SearchComp />
+        </div>
         <div className={styles.sponsors_list}>
           <Card />
           <Card />
