@@ -1,0 +1,12 @@
+.input_container {
+  display: flex;
+  align-items: center;
+  background-color: var(--highlight-main-background);
+  width: 80%;
+  border-radius: 0.8rem;
+  gap: 1rem;
+  padding-inline: 0.8rem;
+}
+.input {
+  width: 100%;
+}
