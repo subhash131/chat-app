@@ -1,8 +1,9 @@
 "use client";
 import React, { useId, useState } from "react";
 import styles from "./chatlist.module.css";
-import { Plus, Search } from "lucide-react";
+import { Plus } from "lucide-react";
 import Item from "./ListItem";
+import SearchComp from "../../common/Search";
 
 const ChatList = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -10,10 +11,7 @@ const ChatList = () => {
   return (
     <div className={styles.container}>
       <div className={styles.topbar}>
-        <div className={styles.input_container}>
-          <Search strokeWidth={1.5} width={18} />
-          <input className={styles.input} placeholder="Search" />
-        </div>
+        <SearchComp />
         <div className={styles.icon}>
           <Plus strokeWidth={1.5} width={18} />
         </div>
