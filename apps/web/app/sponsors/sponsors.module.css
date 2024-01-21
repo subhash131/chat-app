@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.sponsors_container {
+  background-color: var(--highlight-layout-background);
+  width: 78%;
+  border-radius: 1.2rem;
+}
+.sponsors_search {
+}
+.sponsors_list {
+  padding: 1rem;
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.recent_sponsors_container {
+  padding: 1rem;
+  width: calc(100% - 78%);
+}
+.recent_sponsors_list {
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 4rem;
+}
