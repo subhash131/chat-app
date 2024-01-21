@@ -5,7 +5,7 @@ import ImageList from "./ImageList";
 import Options from "./Options";
 import FilesList from "./FilesList";
 import SharedLinks from "./SharedLinks";
-import Titlebar from "./Titlebar";
+import Titlebar from "../../common/Titlebar";
 
 const ChatDetails = () => {
   return (
