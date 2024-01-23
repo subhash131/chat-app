@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./common.module.css";
+import styles from "./titlebar.module.css";
 
 const Titlebar = ({
   name,
